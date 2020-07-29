@@ -6,7 +6,5 @@ services:
       context: .
     image: multitor-proxies
     container_name: multitor-proxies
-    ports:
-      - "16379:16379"
-      - "29379-29479:15379-15479"
+    network_mode: "host"
     mem_limit: 4096m

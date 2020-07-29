@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+  multitor-proxies:
+    build:
+      context: .
+    image: multitor-proxies
+    container_name: multitor-proxies
+    ports:
+      - "15379-16379:15379-16379"
+    mem_limit: 4096m

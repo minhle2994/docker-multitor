@@ -8,5 +8,5 @@ services:
     container_name: multitor-proxies
     ports:
       - "16379:16379"
-      - "8123-8223:15379-15479"
+      - "29379-29479:15379-15479"
     mem_limit: 4096m

@@ -41,4 +41,4 @@ RUN	git clone https://github.com/minhle2994/multitor.git && \
 WORKDIR /multitor/
 EXPOSE	16379
 
-CMD multitor --init 50 --user root --socks-port 9000 --control-port 9900 --proxy privoxy --haproxy --verbose --debug > /tmp/multitor.log; tail -f /tmp/multitor.log
+CMD multitor --init 200 --user root --socks-port 9000 --control-port 9900 --proxy privoxy --haproxy --verbose --debug > /tmp/multitor.log; tail -f /tmp/multitor.log
